@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is my first calculator"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/red"/>
+    
+    <EditText
+        android:id="@+id/editText1Id"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="@string/edit_Text1_text"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#1041D1"
+        android:textCursorDrawable="@null"
+        />
+
+
+    <EditText
+        android:id="@+id/editText2Id"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="@string/edit_Text2_text"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#1041D1"
+        android:textCursorDrawable="@null"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_margin="5sp"
+            android:text="@string/add_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/addButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:layout_margin="5sp"
+            android:text="@string/sub_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/subButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:layout_margin="5sp"
+            android:text="@string/mul_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/mulButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:layout_margin="5sp"
+            android:text="@string/div_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/divButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextViewId"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    
+
+</LinearLayout>
